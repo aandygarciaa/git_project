@@ -58,7 +58,7 @@ nav:not(.mm-menu) {
 	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
-	color: #fff;
+	color: #FFB100;
 	line-height: 40px;
 
 	-moz-box-sizing: border-box;
@@ -76,7 +76,8 @@ nav:not(.mm-menu) {
 
 .header a {
 	background: center center no-repeat transparent;
-	background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpi/P//PwOtARMDHQBdLGFBYtMq3BiHT3DRPU4YR4NrNAmPJuHRJDyahEeT8Ii3BCDAAF0WBj5Er5idAAAAAElFTkSuQmCC );
+	color: #ffffff;
+	font-weight: 100;
 
 	display: block;
 	width: 40px;
@@ -142,7 +143,7 @@ nav:not(.mm-menu) {
 
 #index-toggle {
 	padding: 8px 30px 8px 30px;
-	border: solid 1px #b4b4b4;
+	border: solid 1px #333333;
 	border-right: 0px;
 	border-radius: 5px 0px 0px 5px;
 }
@@ -157,29 +158,82 @@ nav:not(.mm-menu) {
 
  #list-toggle {
 	padding: 8px 30px 8px 30px;
-	border: solid 1px #b4b4b4;
+	border: solid 1px #333333;
 	border-radius: 0px 5px 5px 0px;
 	margin-left: -4px;
 }
 
-#index-toggle a:hover {
-	background-color: #b4b4b4;
-	color: #000000;
+#view-toggle a:hover {
+	background-color: #171717;
+	color: #FFB100;
 }
 
- table { width: 100%; background-color:#ffffff;color: #000000;}
+table { 
+ 	width: 100%; 
+ 	background-color:#ffffff;
+ 	color: #000000;
+}
 
- table tr { }
-
- table td {padding: 0px;}
-
- .list-img {
+.thumb-img {
+ 	vertical-align: middle;
  	width: 100px;
- }
+}
 
- .list-reward {
+.list-name {
+ 	text-align: center;
+}
+
+.list-reward {
  	font-weight: 400;
  	color: #04B204;
- }
+ 	text-align: center;
+ 	width: 100px;
+}
+
+.list-caution {
+ 	text-align: center;
+ 	width: 100px;
+}
+
+.list-img {
+ 	width: 100px;
+}
+
+tr.hover {
+   cursor: pointer;
+}
+
+#profile-container {
+	background-color: #ffffff;
+	color: #000000;
+	width: 600px;
+	height: 10000px;
+}
+
+#profile-img {
+	width: 300px;
+	text-align: center;
+	padding: 10px;
+	float: left;
+}
+
+#profile-img img {
+	width: 300px;
+}
+
+#profile-info {
+	width: 300px;
+	float: right;
+	text-align: right;
+}
+
+#firstlastname {
+	text-align: center;
+}
+
+#info-card-container {
+	width: 300px;
+	padding: 10px;
+}
 
 }
