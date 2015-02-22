@@ -10,13 +10,21 @@
       <link type="text/css" rel="stylesheet" href="mmenu.css" />
 
       <script src="https://maps.googleapis.com/maps/api/js"></script>
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+      <script type="text/javascript" src="js/author.js"></script>
       <script type="text/javascript" src="jquery.mmenu.min.all.js"></script>
       <script type="text/javascript">
 
         $(function() {
           $('nav#menu').mmenu();
         });
+
+        $("#the_only_table tr").click( function() {
+          alert("blah");
+          window.location = $(this).find('a').attr('href');
+        });
+        // }).hover( function() {
+        //   $(this).toggleClass('hover');
+        // });
 
         function initialize() {
           var mapCanvas = document.getElementById('map-canvas');
@@ -56,39 +64,39 @@
       </div>
 
 <!-- Table -->
-      <table>
+      <table id="the_only_table">
         <tr>
-          <td><img class="list-img" src="img/agredano-jose.png"></td>
+          <td class="list-img"><a href="profile.html"><img class="thumb-img" src="img/agredano-jose.png"></a></td>
           <td class="list-name">Agredano, Jose</td>
           <td class="list-reward">$$$$</td>
           <td class="list-caution">!!!!</td>
         </tr>
         <tr>
-          <td><img class="list-img" src="img/agredano-jose.png"></td>
+          <td class="list-img"><img class="thumb-img" src="img/agredano-jose.png"></td>
           <td class="list-name">Agredano, Jose</td>
           <td class="list-reward">$$$$</td>
           <td class="list-caution">!!!!</td>
         </tr>
         <tr>
-          <td><img class="list-img" src="img/agredano-jose.png"></td>
+          <td class="list-img"><img class="thumb-img" src="img/agredano-jose.png"></td>
           <td class="list-name">Agredano, Jose</td>
           <td class="list-reward">$$$$</td>
           <td class="list-caution">!!!!</td>
         </tr>
         <tr>
-          <td><img class="list-img" src="img/agredano-jose.png"></td>
+          <td class="list-img"><img class="thumb-img" src="img/agredano-jose.png"></td>
           <td class="list-name">Agredano, Jose</td>
           <td class="list-reward">$$$$</td>
           <td class="list-caution">!!!!</td>
         </tr>
         <tr>
-          <td><img class="list-img" src="img/agredano-jose.png"></td>
+          <td class="list-img"><img class="thumb-img" src="img/agredano-jose.png"></td>
           <td class="list-name">Agredano, Jose</td>
           <td class="list-reward">$$$$</td>
           <td class="list-caution">!!!!</td>
         </tr>
         <tr>
-          <td><img class="list-img" src="img/agredano-jose.png"></td>
+          <td class="list-img"><img class="thumb-img" src="img/agredano-jose.png"></td>
           <td class="list-name">Agredano, Jose</td>
           <td class="list-reward">$$$$</td>
           <td class="list-caution">!!!!</td>
