@@ -7,16 +7,14 @@
       <title>Git_Project</title>
 
       <link rel="stylesheet" href="stylesheet.css">
-      <link type="text/css" rel="stylesheet" href="mmenu.css" />
 
       <script src="https://maps.googleapis.com/maps/api/js"></script>
       <script type="text/javascript" src="js/author.js"></script>
-      <script type="text/javascript" src="jquery.mmenu.min.all.js"></script>
       <script type="text/javascript">
 
         $(function() {
           $('nav#menu').mmenu();
-        });
+
 
         function initialize() {
           var mapCanvas = document.getElementById('map-canvas');
@@ -56,22 +54,7 @@
       </div>
 
 <!-- Map -->
-      <div id="map-canvas">
-
-<!-- Menu -->
-      <nav id="menu">
-        <ul>
-          <li><a href="#settings">Settings</a>
-            <ul>
-              <li><a href="#about/history">History</a></li>
-              <li><a href="#about/team">The team</a>
-              </li>
-              <li><a href="#about/address">Our address</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div id="map-canvas"></div>
 
     </div>
 
