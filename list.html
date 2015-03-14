@@ -6,34 +6,13 @@
     
       <title>Git_Project</title>
 
-      <link rel="stylesheet" href="stylesheet.css">
-      <link type="text/css" rel="stylesheet" href="mmenu.css" />
+      <link rel="stylesheet" href="css/stylesheet.css">
 
-      <script src="https://maps.googleapis.com/maps/api/js"></script>
       <script type="text/javascript" src="js/author.js"></script>
-      <script type="text/javascript" src="jquery.mmenu.min.all.js"></script>
-      <script type="text/javascript">
-
-        $(function() {
-          $('nav#menu').mmenu();
-        
-
-        $("tr").click( function() {
-          window.location = $(this).find('a').attr('href');
-        });
-        }).hover( function() {
-          $(this).toggleClass('hover');
-        });
-
-        
-
-      </script>
 
     </head>
 
     <body>
-
-      <div id="page">
 
 <!-- Top Header -->
       <div class="header">
@@ -53,60 +32,67 @@
       </div>
 
 <!-- Table -->
-      <table id="">
+      <table id="table-list">
         <tr>
-          <td class="list-img"><a href="profile.html"><img class="thumb-img" src="img/agredano-jose.png"></a></td>
+          <td class="list-img"><a href="profile/001_W80157359.html"><img class="thumb-img" src="img/agredano-jose.png"></a></td>
           <td class="list-name">Agredano, Jose</td>
+          <td class="list-reward">$$$</td>
+          <td class="list-caution">!!</td>
+        </tr>
+        <tr>
+          <td class="list-img"><a href="profile/002_W630115915.html"><img class="thumb-img" src="img/agredano-omar-thumb.png"></a></td>
+          <td class="list-name">Agredano, Omar</td>
           <td class="list-reward">$$$$</td>
           <td class="list-caution">!!!!</td>
         </tr>
         <tr>
-          <td class="list-img"><img class="thumb-img" src="img/agredano-jose.png"></td>
-          <td class="list-name">Agredano, Jose</td>
+          <td class="list-img"><a href="profile/003_W682427477.html"><img class="thumb-img" src="img/aguilar-emmanuel-perpetuo-thumb.png"></a></td>
+          <td class="list-name">Aguilar, Emmanuel, Perpetuo</td>
+          <td class="list-reward">$$</td>
+          <td class="list-caution">!</td>
+        </tr>
+        <tr>
+          <td class="list-img"><a href="profile/004_ W261770848.html"><img class="thumb-img" src="img/aguirre-valencia-thumb.png"></a></td>
+          <td class="list-name">Aguirre, Valencia</td>
           <td class="list-reward">$$$$</td>
           <td class="list-caution">!!!!</td>
         </tr>
         <tr>
-          <td class="list-img"><img class="thumb-img" src="img/agredano-jose.png"></td>
-          <td class="list-name">Agredano, Jose</td>
+          <td class="list-img"><a href="profile/002_W630115915.html"><img class="thumb-img" src="img/albarran-armando-thumb.png"></a></td>
+          <td class="list-name">Albarran, Armando</td>
           <td class="list-reward">$$$$</td>
           <td class="list-caution">!!!!</td>
         </tr>
         <tr>
-          <td class="list-img"><img class="thumb-img" src="img/agredano-jose.png"></td>
-          <td class="list-name">Agredano, Jose</td>
+          <td class="list-img"><a href="profile/002_W630115915.html"><img class="thumb-img" src="img/alcala-lopez-thumb.png"></a></td>
+          <td class="list-name">Alcala, Lopez</td>
           <td class="list-reward">$$$$</td>
           <td class="list-caution">!!!!</td>
         </tr>
         <tr>
-          <td class="list-img"><img class="thumb-img" src="img/agredano-jose.png"></td>
-          <td class="list-name">Agredano, Jose</td>
+          <td class="list-img"><img class="thumb-img" src="img/alvarez-adan-thumb.png"></td>
+          <td class="list-name">Alarez, Adan</td>
           <td class="list-reward">$$$$</td>
           <td class="list-caution">!!!!</td>
         </tr>
         <tr>
-          <td class="list-img"><img class="thumb-img" src="img/agredano-jose.png"></td>
-          <td class="list-name">Agredano, Jose</td>
+          <td class="list-img"><img class="thumb-img" src="img/anderson-lloyd-kenneth-thumb.png"></td>
+          <td class="list-name">Anderson, Lloyd, Kenneth</td>
           <td class="list-reward">$$$$</td>
           <td class="list-caution">!!!!</td>
         </tr>
       </table>
 
-<!-- Menu -->
-      <nav id="menu">
-        <ul>
-          <li><a href="#settings">Settings</a>
-            <ul>
-              <li><a href="#about/history">History</a></li>
-              <li><a href="#about/team">The team</a>
-              </li>
-              <li><a href="#about/address">Our address</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+            <script type="text/javascript">
+      $("tr").click( function() {
+        window.location = $(this).find('a').attr('href');
+      }).hover( function() {
+        $(this).removeClass('hover');
+        $(this).addClass('hover');
+        $("tr").css("cursor: pointer;");
+      });
+      </script>
 
-    </div>
+    </body>
 
   </html>

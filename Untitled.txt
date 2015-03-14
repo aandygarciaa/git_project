@@ -1,0 +1,5 @@
+SoftKeyboard:
+This function will be used for the search option.
+<gap:plugin name="de.phonostar.softkeyboard" version="0.1.1" />
+
+GoogleNavigate
