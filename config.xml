@@ -21,4 +21,6 @@
 
     <gap:plugin name="com.ionic.keyboard" version="1.0.3" />
 
+    <gap:plugin name="fi.avaus.cordova.geolocation" source="plugins.cordova.io" version="0.3.11" />
+
 </widget>
